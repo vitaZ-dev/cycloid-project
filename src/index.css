@@ -22,6 +22,11 @@ ul {
   list-style: none;
 }
 
+button {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
 html {
   font-size: 10px;
 }
