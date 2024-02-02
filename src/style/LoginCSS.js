@@ -1,14 +1,8 @@
 import styled from '@emotion/styled';
+import { baseContainer } from './CommonStyle';
 
 export const LoginWrap = styled.section`
-  width: 420px;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
+  ${baseContainer};
   img {
     width: 120px;
     height: 120px;
