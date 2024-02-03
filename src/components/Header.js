@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import logo from "../images/cycloid_logo.png";
 import { HeaderWrap } from "../style/HeaderCSS";
+import CommonButton from "./CommonButton";
 
 const Header = () => {
   const nav = useNavigate();
@@ -9,13 +10,21 @@ const Header = () => {
     <>
       <HeaderWrap>
         <h1>
-          <img src={logo} alt="CYCLOID-Logo" />
-          <span className="sr-only">CYCLOID</span>
+          <Link to="/">
+            <img src={logo} alt="CYCLOID-Logo" />
+            <span className="sr-only">CYCLOID</span>
+          </Link>
         </h1>
         <div className="delete-list">
-          삭제 리스트
+          <Link to="/delete">
+            삭제 리스트
+          </Link>
         </div>
-        <button>이미지 & 영상 업로드</button>
+        <CommonButton
+          text="이미지 & 영상 업로드"
+          onClick={() => nav("/upload")}
+          width="240px"
+        />
       </HeaderWrap>
       <main>
         <Outlet />
