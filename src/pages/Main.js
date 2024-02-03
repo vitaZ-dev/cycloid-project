@@ -1,10 +1,12 @@
-import react from "react";
+import React from "react";
+import { MainWrap } from "../style/MainCSS";
+import MainCarousel from "./MainCarousel";
 
 const Main = () => {
   return (
-    <>
-      메인페이지
-    </>
+    <MainWrap>
+      <MainCarousel />
+    </MainWrap>
   )
 }
 
