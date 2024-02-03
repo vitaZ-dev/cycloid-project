@@ -28,3 +28,30 @@ export const CommonInputWrap = styled.div`
     }
   }
 `;
+
+const basicStyle = `
+  width: 100%;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #03b3e9;
+  font-size: 14px;
+  color: #f9f9f9;
+  font-weight: 500;
+`;
+const btnChecked = `
+  border: 1px solid #03b3e9;
+  background: #fff;
+  color: #03b3e9;
+  font-weight: 700;
+`;
+const btnPlay = `
+  background: #00c937;
+`;
+
+export const CommonBtnWrap = styled.button`
+  ${basicStyle}
+  ${({ btnType }) => (btnType === "basic" ? null : btnChecked )};
+  width: ${({ width }) => (width ?? null )};
+  height: ${({ height }) => (height ?? null )};
+`;
