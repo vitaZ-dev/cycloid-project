@@ -55,3 +55,11 @@ export const CommonBtnWrap = styled.button`
   width: ${({ width }) => (width ?? null )};
   height: ${({ height }) => (height ?? null )};
 `;
+
+export const CommonTitleWrap = styled.div`
+  margin-bottom: 12px;
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+`;
