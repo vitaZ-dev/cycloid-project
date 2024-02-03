@@ -4,6 +4,8 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
+import DeleteList from "./pages/DeleteList";
+import Upload from "./pages/Upload";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Header />}>
           <Route path="/" element={<Main />} />
+          <Route path="/delete" element={<DeleteList />} />
+          <Route path="/upload" element={<Upload />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
