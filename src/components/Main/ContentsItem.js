@@ -6,7 +6,11 @@ import CommonButton from "../CommonButton";
 const ContentsItem = () => {
   return (
     <ItemArea>
-      <img src={bikeImg} alt="바이크 이미지" />
+      <button className="delete-contents">
+        <i className="delete-img"></i>
+        <span className="sr-only">컨텐츠 삭제</span>
+      </button>
+      <img className="item-img" src={bikeImg} alt="바이크 이미지" />
       <p className="item-title">영상1</p>
       <div className="item-type">
         <span>type</span>
