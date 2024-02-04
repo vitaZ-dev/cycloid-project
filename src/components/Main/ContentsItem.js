@@ -24,7 +24,10 @@ const ContentsItem = () => {
         <span>time</span>
         <span>01:30</span>
       </div>
-      <CommonButton text="추가하기" />
+      <CommonButton
+        text="추가하기"
+        btnType="basic"
+      />
     </ItemArea>
   )
 }

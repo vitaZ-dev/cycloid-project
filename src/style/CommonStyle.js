@@ -51,7 +51,12 @@ const btnPlay = `
 
 export const CommonBtnWrap = styled.button`
   ${basicStyle}
-  ${({ btnType }) => (btnType === "basic" ? null : btnChecked )};
+  ${({ btnType }) => (
+    btnType === "basic"
+    ? null
+    : btnType === "check" ? btnChecked
+    : btnType === "play" ? btnPlay : null)
+  };
   width: ${({ width }) => (width ?? null )};
   height: ${({ height }) => (height ?? null )};
 `;

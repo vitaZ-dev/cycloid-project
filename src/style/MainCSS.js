@@ -15,7 +15,7 @@ export const MainCarouselArea = styled.section`
 `;
 export const ItemArea = styled.div`
   position: relative;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 180px;
   display: flex;
   flex-direction: column;

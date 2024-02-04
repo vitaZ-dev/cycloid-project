@@ -5,7 +5,7 @@ const CommonButton = ({ text, onClick, btnType = "basic", width, height }) => {
   return (
     <CommonBtnWrap
       onClick={onClick}
-      btnType={btnType}
+      btnType={btnType} /* basic, check, play */
       width={width}
       height={height}
     >
