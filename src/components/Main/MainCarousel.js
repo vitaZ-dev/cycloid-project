@@ -3,11 +3,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules';
-import CommonTitle from "../components/CommonTitle";
+import CommonTitle from "../CommonTitle";
+import { MainCarouselArea } from "../../style/MainCSS";
+import CarouselItem from "./CarouselItem";
 
 const MainCarousel = () => {
+  const styleTemp = {
+    width: "200px"
+  };
   return (
-    <>
+    <MainCarouselArea>
       <CommonTitle title="최근 재생 한 컨텐츠" />
       <Swiper
         id="recently-played-contents"
@@ -17,7 +22,7 @@ const MainCarousel = () => {
         }}
         modules={[Navigation]}
         loop={false}
-        slidesPerView={2}
+        slidesPerView={6}
         slidesPerGroup={1}
         spaceBetween={25}
         // breakpoints={{
@@ -30,11 +35,17 @@ const MainCarousel = () => {
         //   },
         // }}
       >
+        <SwiperSlide className="width200">
+          <CarouselItem />
+        </SwiperSlide>
         <SwiperSlide>slie01</SwiperSlide>
         <SwiperSlide>slie02</SwiperSlide>
         <SwiperSlide>slie03</SwiperSlide>
+        <SwiperSlide>slie04</SwiperSlide>
+        <SwiperSlide>slie05</SwiperSlide>
+        <SwiperSlide>slie06</SwiperSlide>
       </Swiper>
-    </>
+    </MainCarouselArea>
   )
 }
 
