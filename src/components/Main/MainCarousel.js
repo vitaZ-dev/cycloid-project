@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules';
 import CommonTitle from "../CommonTitle";
 import { MainCarouselArea } from "../../style/MainCSS";
-import CarouselItem from "./CarouselItem";
+import ContentsItem from "./ContentsItem";
 
 const MainCarousel = () => {
   const styleTemp = {
@@ -36,7 +36,7 @@ const MainCarousel = () => {
         // }}
       >
         <SwiperSlide className="width200">
-          <CarouselItem />
+          <ContentsItem />
         </SwiperSlide>
         <SwiperSlide>slie01</SwiperSlide>
         <SwiperSlide>slie02</SwiperSlide>

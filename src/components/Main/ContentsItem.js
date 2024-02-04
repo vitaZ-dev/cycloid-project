@@ -3,7 +3,7 @@ import { ItemArea } from "../../style/MainCSS";
 import bikeImg from "../../images/bike.jpg";
 import CommonButton from "../CommonButton";
 
-const CarouselItem = () => {
+const ContentsItem = () => {
   return (
     <ItemArea>
       <img src={bikeImg} alt="바이크 이미지" />
@@ -25,4 +25,4 @@ const CarouselItem = () => {
   )
 }
 
-export default CarouselItem;
+export default ContentsItem;
