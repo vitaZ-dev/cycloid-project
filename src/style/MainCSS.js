@@ -73,4 +73,23 @@ export const ItemArea = styled.div`
   }
 `;
 
-export const AllContentsArea = styled.section``;
+export const AllContentsArea = styled.section`
+  .all-contents {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    // display: flex;
+    // flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @media only screen and (max-width: 1012px) {
+    .all-contents {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media only screen and (max-width: 876px) {
+    .all-contents {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+`;
